@@ -1,3 +1,3 @@
-module github.com/Kwongyhue/chowkue-website
+module github.com/Kwongyhue/kuechow
 
 go 1.17
