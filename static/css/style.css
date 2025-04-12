@@ -33,10 +33,19 @@ html {
   }
 }
 
+@font-face {
+  font-family: 'The Seasons';
+  src: url('/fonts/Fontspring-DEMO-theseasons-reg.otf') format('otf');
+  font-weight: normal;
+  font-size: normal
+}
+
 /* VARIABLES */
 :root {
   --main-font: 'Tangerine', sans-serif;
-  --sub-font: 'Noto Sans', sans-serif;
+  --sub-font: 'Source Serif 4', sans-serif;
+  /* --sub-font: 'Noto Sans', sans-serif; */
+  /* --sub-font: 'The Seasons', sans-serif; */
 
   --strawb: #90404b;
   --mauve: #53152e;
@@ -461,6 +470,7 @@ html {
 
 .section__md-content {
   text-align: left;
+  font-family: var(--sub-font);
 }
 
 @media only screen and (min-width: 800px) {

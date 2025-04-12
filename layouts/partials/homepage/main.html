@@ -1,137 +1,147 @@
 <main>
-    <div class="image image1"></div>
+  <div class="image image1"></div>
 
 
-    <section id="when" class="section light">
-      <!--
-        <div class="section__svg">
-            {{ partial "svgs/leaf.svg" . }}
-        </div>
-      -->
-        <h1 class="section__heading">The Wedding</h1>
-        <section class="section__split">
-            <div>
-                <p class="section__subheading">When</p>
-                <p class="section__text--bold">
-                    {{ .Params.when }}
-                </p>
-            </div>
-            <div>
-                <p class="section__subheading">Where</p>
-                <p class="section__text--bold">
-                    {{ .Params.where.first }}
-                </p>
-                <p class="section__text">
-                    {{ .Params.where.second }}
-                </p>
-            </div>
-        </section>
-        <!-- My CSS in this project is bad, man -->
-        <section style="display:flex;flex-direction:column;align-items:center;">
-            <!--
-            <h2 style="margin-top:2rem;" class="section__heading">Speeches</h2>
+  <section id="The Couple" class="section light">
+    <h1 class="section__heading">The Couple</h1>
+    <section class="section__md-content">
+      <p>Ashley and Ryan’s story began like many modern romances: with a little help from technology. After a few swipes and a handful of messages, they met for their first date over boba tea, where Ryan arrived with a slice of homemade cheesecake. It was a thoughtful and delicious gesture that made a lasting impression and quietly hinted at all the sweetness to come.</p>
+      <p>Over the course of six years, the couple has built their connection on shared adventures, both big and small. They love spending time together testing new recipes in the kitchen such as dumplings in pesto sauce and exploring new places like the local farmers market or a scenic national park. These everyday joys have become the rhythm of their relationship, turning ordinary moments into some of their most cherished memories.</p>
+      <p>When Ryan decided to propose, he went all in on sentiment and surprise. He recreated their early dates—boba, cheesecake, and all—leading Ashley on a nostalgic journey through the memories that shaped their love. At the final stop, the Museum of Fine Arts in Houston, Ryan popped the question. Spoiler alert: Ashley said “Yes!”</p>
+    </section>
+  </section>
+  </section>
 
-            <h3 style="margin-top:2rem;" class="section__heading">Father of Bride</h3>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/XfCBomxy7K8"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+  <div class="image image2"></div>
 
-            <h3 style="margin-top:2rem;" class="section__heading">Best Man</h3>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/JzArXpZgaOs"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+  <section id="The Wedding" class="section light">
+    <h1 class="section__heading">The Wedding</h1>
+    <section class="section__split">
+      <div>
+        <p class="section__subheading">Ceremony</p>
+        <p class="section__text--bold">
+        {{ .Params.ceremony.first }}
+        </p>
+        <p class="section__text--bold">
+        {{ .Params.ceremony.second }}
+        </p>
+        <p class="section__text--bold">
+        {{ .Params.ceremony.third }}
+        </p>
+      </div>
+      <div>
+        <p class="section__subheading">Reception</p>
+        <p class="section__text--bold">
+        {{ .Params.reception.first }}
+        </p>
+        <p class="section__text--bold">
+        {{ .Params.reception.second }}
+        </p>
+        <p class="section__text--bold">
+        {{ .Params.reception.third }}
+        </p>
+      </div>
+      <div>
+        <p class="section__subheading">Dress Code</p>
+        <p class="section__text--bold">
+        {{ .Params.dress_code.first }}
+        </p>
+        <p class="section__text--bold">
+        {{ .Params.dress_code.second }}
+        </p>
+      </div>
 
-            <h3 style="margin-top:2rem;" class="section__heading">Groom</h3>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/NPhbs9SEmVc"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            -->
-        </section>
     </section>
 
-    <div class="image image2"></div>
+  </section>
+  </section>
 
+  <div class="image image3"></div>
 
-    <section id="order-of-events" class="section light">
-      <!--
-        <div class="section__svg">
-            {{ partial "svgs/leaves.svg" . }}
-        </div>
-      -->
-        {{ $t := .Site.GetPage "/section/order-of-events" }}
-        <h1 class="section__heading">{{$t.Params.title}}</h1>
-        <section class="section__md-content">
-            {{ $t.Content }}
-        </section>
+  <section id="Travel and Stay" class="section light">
+    <section class="section__md-content">
+      <h1 class="section__heading">Travel and Stay</h1>
+      <h1 class="section__subheading">Flights</h1>
+      <p>Fly into George Bush Intercontinental Airport</p>
+      <p>Located 30 minutes from the venue.</p>
+      <div style="height:15px"></div>
+      <h1 class="section__subheading">Getting Around</h1>
+      <p>Reserving transportation is encouraged.</p>
+      <p>Rideshare services are available, but keep-in-mind Houston is very large.</p>
+      <div style="height:15px"></div>
+      <h1 class="section__subheading">Accommodations</h1>
+      <p>Here are some hotels within close proximity to the venue:</p>
+      <p>AirBnBs and VRBOs are great for larger groups, but may be further from the venue.</p>
     </section>
+  </section>
 
-    <div class="image image3"></div>
+  <div class="image image1"></div>
 
-    <section id="travel-accommodation" class="section light">
-      <!--    
-        <div class="section__svg">
-            {{ partial "svgs/leaf.svg" . }}
-        </div>
-      -->
-        {{ $t := .Site.GetPage "/section/travel-accommodation" }}
-        <h1 class="section__heading">{{$t.Params.title}}</h1>
-        <section class="section__md-content">
-          <p style="margin-bottom:1em;">Towne Place Suites Houston Northwest - <a href="https://www.marriott.com/en-us/hotels/houtn-towneplace-suites-houston-northwest/overview/">Book here</a></p>
-          <p style="margin-bottom:1em;">Courtyard Houston Northwest - <a href="https://www.marriott.com/en-us/hotels/hounw-courtyard-houston-northwest/overview/">Book here</a></p>
-          <p style="margin-bottom:1em;">Comfort Suites Houston NW Vintage Park - <a href="https://www.choicehotels.com/texas/houston/comfort-suites-hotels/tx497?gal=undefined&gmp=MetaOrganic&gpa=GPADSP20M4&hmGUID=8caf31c3-ae81-4b1a-a9c4-ff50e62391c9&mc=HAGOHPUS&meta=PMFGPADUSSP20M4_TX497_mapresults_US_4_desktop_2025-03-27_selected___organic&pmf=hpagoogle&product=mapresults&ratePlanCode=SP20M4&adults=2&checkInDate=2025-03-27&checkOutDate=2025-03-31">Book here</a></p>
-        </section>
- 
+  <section id="Sights and Bites" class="section light">
+    <section class="section__md-content">
+      <h1 class="section__heading">Sights and Bites</h1>
+      <h1 class="section__subheading">Suggested Visits</h1>
+      <p>Fly into George Bush Intercontinental Airport</p>
+      <p>Located 30 minutes from the venue.</p>
+      <div style="height:15px"></div>
+      <h1 class="section__subheading">Suggested Eats</h1>
+      <p>Reserving transportation is encouraged.</p>
+      <p>Rideshare services are available, but keep-in-mind Houston is very large.</p>
     </section>
-
-    <div class="image image1"></div>
-
-    <section id="dress" class="section light">
-      <!--
-        <div class="section__svg">
-            {{ partial "svgs/leaf.svg" . }}
-        </div>
-      -->
-        {{ $t := .Site.GetPage "/section/dress" }}
-        <h1 class="section__heading">{{$t.Params.title}}</h1>
-        <section class="section__md-content">
-            {{ $t.Content }}
-        </section>
+  </section>
+  <div class="image image2"></div>
+  <section id="Registry" class="section light">
+    <h1 class="section__heading">Registry</h1>
+    <section class="section__md-content" style="text-align:center;">
+      <p>Items purchased from the registry or donations given to the honeymoon fund are appreciated, but not required.</p>
     </section>
-    <section id="facilities-accessibility" class="section light">
-        {{ $t := .Site.GetPage "/section/facilities-accessibility" }}
-        <h1 class="section__heading">{{$t.Params.title}}</h1>
-        <section class="section__md-content">
-            {{ $t.Content }}
-        </section>
+  </section>
+
+  <div class="image image3"></div>
+  <section id="Respond Here" class="section light">
+    <h1 class="section__heading">Respond Here</h1>
+    <section class="section__md-content" style="text-align:center;">
+      The RSVP will be shared shortly after formal invitations are sent out.
     </section>
-    <section id="gifts" class="section light">
-        {{ $t := .Site.GetPage "/section/gifts" }}
-        <h1 class="section__heading">Gifts</h1>
-        <section class="section__md-content">
-            {{ $t.Content }}
-        </section>
-    </section>
+  </section>
 
-    <div class="image image2"></div>
+  <div class="image image1"></div>
+  <section id="more" class="section light" style="text-align:left; font-family: 'Source Serif 4', sans-serif;">
+    <p class="header__text header__text--heavy">FAQs</p>
+    <p>Q: When should I RSVP by?</p>
+    <p>A: Please RSVP no later than December 13, 2025.</p>
+    <div style="height:15px"></div>
 
-    <section id="more" class="section light" style="text-align:center;">
-      <!--        <div class="section__svg">
-            {{ partial "svgs/leaf.svg" . }}
-        </div>
-      -->
-    <p class="header__text header__text--heavy">RSVP</p>
+    <p>Q: Am I allowed to bring a plus one/children?</p>
+    <p>A: The couple kindly request that only those guests formally invited on the invitation attend, unless specifically indicated. In addition, while they would love to celebrate with children, the wedding will be an adults-only affair to allow for everyone to be able to relax and enjoy the night. Thank you for your understanding.</p>
+    <div style="height:15px"></div>
 
-    <p style="margin-bottom:1em;">Please RSVP using the link <a href="https://docs.google.com/forms/d/e/1FAIpQLSfspZyL4OAFHr3pjTeWii3hCaJqxY6AjDXrh5_rFqC6JMWk_g/viewform?usp=header">here</a>!</p>
-        <p style="margin-bottom:1em;">If you're struggling to access the link, please reach out to Ryan.</p>
-    </section>
+    <p>Q: What will the weather be like?</p>
+    <p>A: While the weather may vary, January in Houston typically brings mild winter weather. Guests can expect daytime temperatures ranging from the mid-50s to low 60s°F (13–17°C), with cooler evenings.</p>
+    <div style="height:15px"></div>
 
-    <!--<div class="scroll-top">
-        <a class="scroll-top__button" href="#top">
-            {{ partial "svgs/scroll-up.svg" . }}
-        </a>
-    </div>
-    -->
+    <p>Q: Will the ceremony be outdoors or indoors?</p>
+    <p>A: Weather permitting, the ceremony will take place outdoors. In the event of inclement weather, accommodations will be made for an indoor celebration. </p>
+    <div style="height:15px"></div>
+
+    <p>Q: What time should I plan to arrive?</p>
+    <p>A: The ceremony is scheduled to begin promptly at 4:00 PM. Guests are kindly requested to arrive by 3:30 PM to allow time for parking, seating, and to ensure a smooth and timely start to the celebration.</p>
+    <div style="height:15px"></div>
+
+    <p>Q: Will parking be available?</p>
+    <p>A: Complimentary self-parking will be available on-site at the venue for all guests attending the celebration.</p>
+    <div style="height:15px"></div>
+
+    <p>Q: Can I take photos/videos during the ceremony?</p>
+    <p>A: Please refrain from taking photos/videos during the ceremony; this will allow everyone to be fully present in the moment. A professional photographer and videographer will be capturing the event, and the couple looks forward to sharing those memories with you. There will be plenty of opportunities for engagement later on during the reception!</p>
+    <div style="height:15px"></div>
+
+    <p>Q: Am I allowed to bring alcohol or smoke/vape?</p>
+    <p>A: There will be an open bar for guests to enjoy. The couple asks guests to refrain from bringing outside alcohol or smoking/vaping at the venue, in accordance with venue policies. </p>
+    <div style="height:15px"></div>
+
+    <p>	Q: Who should I contact if I have additional questions?</p>
+    <p>  A: Please reach out to Ashley and Ryan at kuechow.wedding@gmail.com or ‪(512)-710-5426‬.</p>
+
+  </section>
 </main>

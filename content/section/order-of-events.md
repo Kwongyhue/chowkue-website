@@ -1,4 +1,4 @@
 ---
 draft: false
-title: "Order of Events"
+title: "The Wedding"
 ---
