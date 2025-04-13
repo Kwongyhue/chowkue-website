@@ -346,7 +346,7 @@ html {
   text-align: center;
 }
 
-.section__split div:nth-child(1) {
+.section__split div:not(:last-child) {
   border-right: none;
   border-bottom: solid 2px var(--dusty-pink);
 }
@@ -356,7 +356,7 @@ html {
     flex-direction: row;
   }
 
-  .section__split div:nth-child(1) {
+  .section__split div:not(:last-child) {
     border-right: solid 2px var(--dusty-pink);
     border-bottom: none;
   }
